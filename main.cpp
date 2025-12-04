@@ -1,29 +1,24 @@
 #include <iostream>
-using namespace std;
-
 #include "Futbolista.h"
 #include "Basquetbolista.h"
 #include "Nadador.h"
+#include "EquipoDeDeportes.h"
+
+using namespace std;
 
 int main() {
-    cout << "=== Proyecto Deportistas ===" << endl << endl;
 
-    Futbolista f("Ana", 20, "Portera");
-    Basquetbolista b("Luis", 198);
-    Nadador n("Maria", "Libre");
+    EquipoDeDeportes equipo;
 
-    f.mostrarInfo();
-    f.atajar();
+    Futbolista f1("Luis", 20, "Portero");
+    Basquetbolista b1("Carlos", 21, 198);
+    Nadador n1("Ana", 19, "Mariposa");
 
-    cout << endl;
+    equipo.agregar(&f1);
+    equipo.agregar(&b1);
+    equipo.agregar(&n1);
 
-    b.mostrarInfo();
-    b.lanzarTriple();
-
-    cout << endl;
-
-    n.mostrarInfo();
-    n.nadar();
+    equipo.mostrarTodos();
 
     return 0;
 } 

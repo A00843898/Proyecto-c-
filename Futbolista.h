@@ -1,26 +1,22 @@
 #ifndef FUTBOLISTA_H
 #define FUTBOLISTA_H
 
+#include "Deportista.h"
 #include <string>
 using namespace std;
 
-class Futbolista {
+class Futbolista : public Deportista {
 private:
-    string nombre;
-    int edad;
     string posicion;
 
 public:
     Futbolista(string n, int e, string p);
 
-    string getNombre();
-    int getEdad();
     string getPosicion();
-
     void setPosicion(string p);
 
     void mostrarInfo();
-    void atajar(); 
+    void entrenar();
 };
 
-#endif 
+#endif
