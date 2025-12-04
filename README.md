@@ -1,10 +1,7 @@
 GESTOR DE DEPORTES
 
-En el deporte existen muchos tipos de atletas, cada uno con características distintas dependiendo de la disciplina que practican. El programa permite que el usuario cree objetos de distintos tipos de deportistas y acceda a su información mediante métodos simples.
+Este proyecto crea y administra diferentes tipos de deportistas usando programación orientada a objetos en C++. La clase Deportista funciona como clase padre y de ella heredan Futbolista, Basquetbolista y Nadador. También incluye la clase EquipoDeDeportes, que usa agregación para guardar varios deportistas juntos.
+El programa crea deportistas, muestra su información y ejecuta una acción típica de cada deporte. Todos los deportistas se guardan dentro de un equipo y después se muestran juntos. Solo maneja acciones básicas y no guarda datos en archivos ni pide información al usuario.
 
-¿Cómo se usa?
-El usuario puede crear deportistas y ejecutar acciones como:
-Mostrar su información.
-Realizar una acción característica del deporte (por ejemplo: “atajar”, “lanzar tiro libre”, “nadar estilo libre”).
 
-Esto se demostrará creando un objeto de cada clase en el main y mandando llamar sus métodos.
+
