@@ -54,7 +54,7 @@ Menú principal:
 0. Salir
    
 Cada categoría permite:
-Registrar
-Ver lista
-Ejecutar una acción especial (entrenar, lanzar triple, nadar)
-Modificar datos
+- Registrar
+- Ver lista
+- Ejecutar una acción especial (entrenar, lanzar triple, nadar)
+- Modificar datos
