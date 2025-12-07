@@ -2,18 +2,16 @@
 #define NADADOR_H
 
 #include "Deportista.h"
-using namespace std;
 
 class Nadador : public Deportista {
 private:
-    string estilo;
+    std::string estilo;
 
 public:
-    Nadador(string n, string est);         // sin edad
-    Nadador(string n, int e, string est);  // con edad
+    Nadador(std::string n, int e, std::string est, int i);  
 
-    string getEstilo();
-    void setEstilo(string est);
+    std::string getEstilo();
+    void setEstilo(std::string est);
 
     void mostrarInfo();
     void nadar();

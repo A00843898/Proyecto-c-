@@ -2,16 +2,9 @@
 #include <iostream>
 using namespace std;
 
-// sin edad
-Basquetbolista::Basquetbolista(string n, int h)
-    : Deportista(n, 0)
-{
-    altura = h;
-}
-
 // con edad
-Basquetbolista::Basquetbolista(string n, int e, int h)
-    : Deportista(n, e)
+Basquetbolista::Basquetbolista(string n, int e, int h, int i)
+    : Deportista(i, n, e)
 {
     altura = h;
 }

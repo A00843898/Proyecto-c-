@@ -3,17 +3,16 @@
 
 #include "Deportista.h"
 #include <string>
-using namespace std;
 
 class Futbolista : public Deportista {
 private:
-    string posicion;
+    std::string posicion;
 
 public:
-    Futbolista(string n, int e, string p);
+    Futbolista(std::string n, int e, std::string p, int i);
 
-    string getPosicion();
-    void setPosicion(string p);
+    std::string getPosicion();
+    void setPosicion(std::string p);
 
     void mostrarInfo();
     void entrenar();

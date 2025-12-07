@@ -2,20 +2,23 @@
 #define DEPORTISTA_H
 
 #include <string>
-using namespace std;
 
 class Deportista {
 protected:
-    string nombre;
+    int id;
+    std::string nombre;
     int edad;
 
 public:
-    Deportista(string n, int e);
+    Deportista();                                   // por defecto
+    Deportista(int i, std::string n, int e);        // con ID
 
-    string getNombre();
+    int getId();
+    std::string getNombre();
     int getEdad();
 
-    void setNombre(string n);
+    void setId(int i);
+    void setNombre(std::string n);
     void setEdad(int e);
 
     virtual void mostrarInfo();

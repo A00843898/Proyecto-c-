@@ -2,8 +2,8 @@
 #include <iostream>
 using namespace std;
 
-Futbolista::Futbolista(string n, int e, string p)
-    : Deportista(n, e) 
+Futbolista::Futbolista(string n, int e, string p, int i)
+    : Deportista(i, n, e) 
 {
     posicion = p;
 }

@@ -2,16 +2,9 @@
 #include <iostream>
 using namespace std;
 
-// sin edad
-Nadador::Nadador(string n, string est)
-    : Deportista(n, 0)
-{
-    estilo = est;
-}
 
-// con edad
-Nadador::Nadador(string n, int e, string est)
-    : Deportista(n, e)
+Nadador::Nadador(string n, int e, string est, int i)
+    : Deportista(i, n, e)
 {
     estilo = est;
 }

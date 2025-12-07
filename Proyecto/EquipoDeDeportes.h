@@ -3,15 +3,16 @@
 
 #include "Deportista.h"
 #include <vector>
-using namespace std;
 
 class EquipoDeDeportes {
 private:
-    vector<Deportista*> lista;
+    std::vector<Deportista> lista;
 
 public:
-    void agregar(Deportista* d);
+    void agregar(Deportista d);
     void mostrarTodos();
+    int buscarPosicionPorId(int id); 
+    void mostrarDeportistaPorId(int id);
 };
 
 #endif
